@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="stackYellow">#F1D302</color>
+    <color name="playerRed">#C82C21</color>
+    <color name="playerRedDark">#631712</color>
+    <color name="playerRedLight">#ED6B62</color>
+    <color name="playerGray">#A8A8A8</color>
+    <color name="playerGrayDark">#6C6C6C</color>
+    <color name="playerGrayLight">#D3D3D3</color>
+    <color name="boardColor">#494949</color>
+</resources>
