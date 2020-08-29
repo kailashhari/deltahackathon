@@ -152,6 +152,42 @@ public class MyView extends View {
             }
         }
 
+        if(n){
+
+            if((pieceSelectedI-1 == 0&&pieceSelectedJ == 8)&&(turn == 2))
+                n = false;
+            if((pieceSelectedI-1 == 0&&pieceSelectedJ == 1)&&(turn == 1))
+                n = false;
+        }
+        if(s){
+
+            if((pieceSelectedI+1 == 7&&pieceSelectedJ == 8)&&(turn == 2))
+                s = false;
+            if((pieceSelectedI+1 == 7&&pieceSelectedJ == 1)&&(turn == 1))
+                s = false;
+        }
+        if(e){
+
+            if((pieceSelectedI == 0&&pieceSelectedJ+1 == 8)&&(turn == 2))
+                e = false;
+            if((pieceSelectedI == 0&&pieceSelectedJ+1 == 1)&&(turn == 1))
+                e = false;
+            if((pieceSelectedI == 7&&pieceSelectedJ+1 == 8)&&(turn == 2))
+                e = false;
+            if((pieceSelectedI == 7&&pieceSelectedJ+1 == 1)&&(turn == 1))
+                e = false;
+        }
+        if(w){
+
+            if((pieceSelectedI == 0&&pieceSelectedJ-1 == 8)&&(turn == 2))
+                w = false;
+            if((pieceSelectedI == 0&&pieceSelectedJ-1 == 1)&&(turn == 1))
+                w = false;
+            if((pieceSelectedI == 7&&pieceSelectedJ-1 == 8)&&(turn == 2))
+                w = false;
+            if((pieceSelectedI == 7&&pieceSelectedJ-1 == 1)&&(turn == 1))
+                w = false;
+        }
 
 
 
