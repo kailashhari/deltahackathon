@@ -294,7 +294,10 @@ public class MyView extends View {
                             motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
                         else
                             motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
-
+                        if (turn == 1)
+                            turn = 2;
+                        else
+                            turn = 1;
 
                     }
                 }
@@ -308,7 +311,10 @@ public class MyView extends View {
                             motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
                         else
                             motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
-
+                        if (turn == 1)
+                            turn = 2;
+                        else
+                            turn = 1;
                     }
                 }
                 if((event.getX()>xOrigin+11*x)&&(event.getX()<xOrigin+12*x)&&(event.getY()>yOrigin+6*x)&&(event.getY()<yOrigin+7*x)) {
@@ -321,7 +327,10 @@ public class MyView extends View {
                             motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
                         else
                             motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
-
+                        if (turn == 1)
+                            turn = 2;
+                        else
+                            turn = 1;
                     }
                 }
                 if((event.getX()>xOrigin+14*x)&&(event.getX()<xOrigin+15*x)&&(event.getY()>yOrigin+6*x)&&(event.getY()<yOrigin+7*x)) {
@@ -334,7 +343,10 @@ public class MyView extends View {
                             motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
                         else
                             motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
-
+                        if (turn == 1)
+                            turn = 2;
+                        else
+                            turn = 1;
                     }
                 }
                 if((event.getX()>xOrigin+12*x)&&(event.getX()<xOrigin+14*x)&&(event.getY()>yOrigin+3*x)&&(event.getY()<yOrigin+4*x)) {
@@ -347,7 +359,10 @@ public class MyView extends View {
                             motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
                         else
                             motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
-
+                        if (turn == 1)
+                            turn = 2;
+                        else
+                            turn = 1;
                     }
                 }
                 if((event.getX()>xOrigin+12*x)&&(event.getX()<xOrigin+14*x)&&(event.getY()>yOrigin+6*x)&&(event.getY()<yOrigin+7*x)) {
@@ -360,7 +375,10 @@ public class MyView extends View {
                             motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
                         else
                             motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
-
+                        if (turn == 1)
+                            turn = 2;
+                        else
+                            turn = 1;
                     }
                 }
                 if((event.getX()>xOrigin+14*x)&&(event.getX()<xOrigin+15*x)&&(event.getY()>yOrigin+4*x)&&(event.getY()<yOrigin+6*x)) {
@@ -373,7 +391,10 @@ public class MyView extends View {
                             motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
                         else
                             motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
-
+                        if (turn == 1)
+                            turn = 2;
+                        else
+                            turn = 1;
                     }
                 }
                 if((event.getX()>xOrigin+11*x)&&(event.getX()<xOrigin+12*x)&&(event.getY()>yOrigin+4*x)&&(event.getY()<yOrigin+6*x)){
@@ -386,7 +407,10 @@ public class MyView extends View {
                             motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
                         else
                             motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
-
+                        if (turn == 1)
+                            turn = 2;
+                        else
+                            turn = 1;
                     }
 
                 }
@@ -394,10 +418,7 @@ public class MyView extends View {
 
             }
 
-            if (turn == 1)
-                turn = 2;
-            else
-                turn = 1;
+
             invalidate();
             return true;
         }
