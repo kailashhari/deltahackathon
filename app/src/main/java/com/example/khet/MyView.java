@@ -284,11 +284,113 @@ public class MyView extends View {
                         turn = 1;
                 }
 
-                if((event.getX()>xOrigin+11*x)&&(event.getX()<xOrigin+12*x)&&(event.getY()>yOrigin+3*x)&&(event.getY()<yOrigin+4*x)){
+                if((event.getX()>xOrigin+11*x)&&(event.getX()<xOrigin+12*x)&&(event.getY()>yOrigin+3*x)&&(event.getY()<yOrigin+4*x)) {
+
+                    int temp;
+                    if (nw) {
+                        temp = motherBoard[pieceSelectedI - 1][pieceSelectedJ - 1];
+                        motherBoard[pieceSelectedI - 1][pieceSelectedJ - 1] = motherBoard[pieceSelectedI][pieceSelectedJ];
+                        if (getPiece(motherBoard[pieceSelectedI][pieceSelectedJ]) == 4)
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
+                        else
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
 
 
+                    }
+                }
+                if((event.getX()>xOrigin+14*x)&&(event.getX()<xOrigin+15*x)&&(event.getY()>yOrigin+3*x)&&(event.getY()<yOrigin+4*x)) {
+
+                    int temp;
+                    if (ne) {
+                        temp = motherBoard[pieceSelectedI - 1][pieceSelectedJ + 1];
+                        motherBoard[pieceSelectedI - 1][pieceSelectedJ + 1] = motherBoard[pieceSelectedI][pieceSelectedJ];
+                        if (getPiece(motherBoard[pieceSelectedI][pieceSelectedJ]) == 4)
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
+                        else
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
+
+                    }
+                }
+                if((event.getX()>xOrigin+11*x)&&(event.getX()<xOrigin+12*x)&&(event.getY()>yOrigin+6*x)&&(event.getY()<yOrigin+7*x)) {
+
+                    int temp;
+                    if (sw) {
+                        temp = motherBoard[pieceSelectedI + 1][pieceSelectedJ - 1];
+                        motherBoard[pieceSelectedI + 1][pieceSelectedJ - 1] = motherBoard[pieceSelectedI][pieceSelectedJ];
+                        if (getPiece(motherBoard[pieceSelectedI][pieceSelectedJ]) == 4)
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
+                        else
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
+
+                    }
+                }
+                if((event.getX()>xOrigin+14*x)&&(event.getX()<xOrigin+15*x)&&(event.getY()>yOrigin+6*x)&&(event.getY()<yOrigin+7*x)) {
+
+                    int temp;
+                    if (se) {
+                        temp = motherBoard[pieceSelectedI + 1][pieceSelectedJ + 1];
+                        motherBoard[pieceSelectedI + 1][pieceSelectedJ + 1] = motherBoard[pieceSelectedI][pieceSelectedJ];
+                        if (getPiece(motherBoard[pieceSelectedI][pieceSelectedJ]) == 4)
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
+                        else
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
+
+                    }
+                }
+                if((event.getX()>xOrigin+12*x)&&(event.getX()<xOrigin+14*x)&&(event.getY()>yOrigin+3*x)&&(event.getY()<yOrigin+4*x)) {
+
+                    int temp;
+                    if (n) {
+                        temp = motherBoard[pieceSelectedI - 1][pieceSelectedJ];
+                        motherBoard[pieceSelectedI - 1][pieceSelectedJ] = motherBoard[pieceSelectedI][pieceSelectedJ];
+                        if (getPiece(motherBoard[pieceSelectedI][pieceSelectedJ]) == 4)
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
+                        else
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
+
+                    }
+                }
+                if((event.getX()>xOrigin+12*x)&&(event.getX()<xOrigin+14*x)&&(event.getY()>yOrigin+6*x)&&(event.getY()<yOrigin+7*x)) {
+
+                    int temp;
+                    if (s) {
+                        temp = motherBoard[pieceSelectedI + 1][pieceSelectedJ];
+                        motherBoard[pieceSelectedI + 1][pieceSelectedJ] = motherBoard[pieceSelectedI][pieceSelectedJ];
+                        if (getPiece(motherBoard[pieceSelectedI][pieceSelectedJ]) == 4)
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
+                        else
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
+
+                    }
+                }
+                if((event.getX()>xOrigin+14*x)&&(event.getX()<xOrigin+15*x)&&(event.getY()>yOrigin+4*x)&&(event.getY()<yOrigin+6*x)) {
+
+                    int temp;
+                    if (e) {
+                        temp = motherBoard[pieceSelectedI][pieceSelectedJ + 1];
+                        motherBoard[pieceSelectedI][pieceSelectedJ + 1] = motherBoard[pieceSelectedI][pieceSelectedJ];
+                        if (getPiece(motherBoard[pieceSelectedI][pieceSelectedJ]) == 4)
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
+                        else
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
+
+                    }
+                }
+                if((event.getX()>xOrigin+11*x)&&(event.getX()<xOrigin+12*x)&&(event.getY()>yOrigin+4*x)&&(event.getY()<yOrigin+6*x)){
+
+                    int temp;
+                    if(w){
+                        temp = motherBoard[pieceSelectedI][pieceSelectedJ-1];
+                        motherBoard[pieceSelectedI][pieceSelectedJ-1] = motherBoard[pieceSelectedI][pieceSelectedJ];
+                        if(getPiece(motherBoard[pieceSelectedI][pieceSelectedJ]) == 4)
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = temp;
+                        else
+                            motherBoard[pieceSelectedI][pieceSelectedJ] = 0;
+
+                    }
 
                 }
+                hasSelectedPiece = false;
 
             }
 
