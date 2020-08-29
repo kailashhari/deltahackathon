@@ -152,46 +152,7 @@ public class MyView extends View {
             }
         }
 
-        if (n) {
 
-            if (getCol(motherBoard[pieceSelectedI - 1][pieceSelectedJ]) != turn)
-                n = false;
-        }
-        if (s) {
-
-            if (getCol(motherBoard[pieceSelectedI + 1][pieceSelectedJ]) != turn)
-                s = false;
-        }
-        if (e) {
-
-            if (getCol(motherBoard[pieceSelectedI][pieceSelectedJ+1]) != turn)
-                e = false;
-        }
-        if (w) {
-
-            if (getCol(motherBoard[pieceSelectedI][pieceSelectedJ-1]) != turn)
-                w = false;
-        }
-        if (ne) {
-
-            if (getCol(motherBoard[pieceSelectedI - 1][pieceSelectedJ+1]) != turn)
-                ne = false;
-        }
-        if (sw) {
-
-            if (getCol(motherBoard[pieceSelectedI + 1][pieceSelectedJ-1]) != turn)
-                sw = false;
-        }
-        if (se) {
-
-            if (getCol(motherBoard[pieceSelectedI+1][pieceSelectedJ+1]) != turn)
-                se = false;
-        }
-        if (nw) {
-
-            if (getCol(motherBoard[pieceSelectedI-1][pieceSelectedJ-1]) != turn)
-                nw = false;
-        }
 
 
 
