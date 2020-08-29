@@ -109,6 +109,48 @@ public class MyView extends View {
             se = false;
 
         }
+        if(getPiece(motherBoard[pieceSelectedI][pieceSelectedJ])!=4) {
+            if (n) {
+
+                if (motherBoard[pieceSelectedI - 1][pieceSelectedJ] != 0)
+                    n = false;
+            }
+            if (s) {
+
+                if (motherBoard[pieceSelectedI + 1][pieceSelectedJ] != 0)
+                    s = false;
+            }
+            if (e) {
+
+                if (motherBoard[pieceSelectedI][pieceSelectedJ+1] != 0)
+                    e = false;
+            }
+            if (w) {
+
+                if (motherBoard[pieceSelectedI][pieceSelectedJ-1] != 0)
+                    w = false;
+            }
+            if (ne) {
+
+                if (motherBoard[pieceSelectedI - 1][pieceSelectedJ+1] != 0)
+                    ne = false;
+            }
+            if (sw) {
+
+                if (motherBoard[pieceSelectedI + 1][pieceSelectedJ-1] != 0)
+                    sw = false;
+            }
+            if (se) {
+
+                if (motherBoard[pieceSelectedI+1][pieceSelectedJ+1] != 0)
+                    se = false;
+            }
+            if (nw) {
+
+                if (motherBoard[pieceSelectedI-1][pieceSelectedJ-1] != 0)
+                    nw = false;
+            }
+        }
 
 
 
@@ -240,6 +282,12 @@ public class MyView extends View {
                         turn = 2;
                     else
                         turn = 1;
+                }
+
+                if((event.getX()>xOrigin+11*x)&&(event.getX()<xOrigin+12*x)&&(event.getY()>yOrigin+3*x)&&(event.getY()<yOrigin+4*x)){
+
+
+
                 }
 
             }
